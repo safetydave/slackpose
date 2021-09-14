@@ -1,0 +1,8 @@
+#!/bin/bash
+
+# Convert all videos in a folder
+
+for file in "$1"/*.mov
+do
+  ./convert "$file"
+done

@@ -1,0 +1,5 @@
+#!/bin/bash
+
+# Convert iPhone MOV to MP4
+
+ffmpeg -i "$1" -vcodec h264 -acodec mp2 "$(basename "$1" .mov).mp4"

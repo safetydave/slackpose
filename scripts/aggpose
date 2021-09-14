@@ -1,0 +1,5 @@
+#!/bin/sh
+
+# combine multiple json files from a folder into an array in a single file
+
+jq -s '[.[]]' "$1"/*.json > "$1"/"$(basename "$1").json"
